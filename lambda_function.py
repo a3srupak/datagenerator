@@ -137,7 +137,7 @@ def lambda_handler(event, context):
         if body is not None:
             users_count = int(json.loads(body).get('users_count', users_count))
             jurisdictionID = json.loads(body).get('jurisdictionID', jurisdictionID)
-            print(jurisdictionID)
+            
          
            
             if users_count > int(os.environ["USERCREATIONLIMIT"]):
